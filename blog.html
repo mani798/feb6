@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Local Storage</title>
+  <link rel="stylesheet" href="blog.css">
+  <style>
+      body{
+          background-color: rgb(182, 229, 238);
+      }
+  </style>
+</head>
+<body>
+  <div id="formDiv">
+        <form id="carForm">
+            <h1 style="text-align: center;"> Storage</h1>
+            <h5  for="carBrand" >bike</label>
+            <input style="text-align: center" type="text" id="carBrand" placeholder="bike brand" required autofocus><br>
+            <h5  style="text-align: center"for="carPrice" >Price</label>
+            <input style="text-align: center" type="text" id="carPrice" placeholder="Price" required><br>
+            <h5 style="text-align: center" for="key" >Key</label>
+            <input  style="text-align: center"type="text" id="key" placeholder="Key" required><br>
+            <button style="text-align: center" type="submit">Store Records</button>
+        </form>
+        <br>
+        <label for="retrieveKey" >Enter Key to retrieve item</label>
+        <input type="text" id="retrieveKey" placeholder="retrieveKey" required><br>
+        <button id="retrieveButton">Retrieve records</button>
+        <br>
+        <div id="retrieve"></div>
+        <br>
+        <label for="removeKey" >Enter Key to delete item</label>
+        <input type="text" id="removeKey" placeholder="removeKey" required><br>
+        <button id="removeButton">Remove record</button>
+        <br>
+        <button id="clearButton">Clear all records</button>
+  </div>
+  <script type="text/javascript" src="blog.js"></script>
+</body>
+</html>
